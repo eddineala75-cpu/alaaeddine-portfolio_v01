@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alaaeddine Errachid — Governance, Risk & Compliance Consultant</title>
+<meta name="description" content="Alaaeddine Errachid — Junior Consultant in Governance, Risk Management, Compliance, QHSE and Information Security. ISO 9001, ISO 14001, ISO 45001, ISO 27001, risk mapping, internal audit support.">
+<meta name="keywords" content="GRC consultant, Governance Risk Compliance, QHSE, ISO 9001, ISO 27001, Risk Management, Internal Audit, Information Security, Alaaeddine Errachid">
+<meta name="author" content="Alaaeddine Errachid">
+<meta property="og:title" content="Alaaeddine Errachid — Governance, Risk & Compliance Consultant">
+<meta property="og:description" content="Helping organizations strengthen governance, manage risk and improve operational performance.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0B1F3A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    darkMode: 'class',
+    theme: {
+      extend: {
+        colors: {
+          navy: { DEFAULT: '#0B1F3A', 2: '#14294C', deep: '#070F1F', surface: '#0F1C33' },
+          gold: { DEFAULT: '#B4922E', light: '#D4B968', dim: '#8A7024' },
+          ink: { 900: '#0B1F3A', 700: '#1F2A3D', 500: '#64748B', 300: '#CBD3DD', 100: '#F4F5F7' }
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'sans-serif'],
+          sans: ['Inter', 'sans-serif'],
+          mono: ['"IBM Plex Mono"', 'monospace']
+        },
+        boxShadow: {
+          soft: '0 2px 24px -4px rgba(11,31,58,0.08), 0 1px 3px rgba(11,31,58,0.06)',
+          lift: '0 24px 48px -12px rgba(11,31,58,0.18)',
+          gold: '0 0 0 1px rgba(180,146,46,0.35)'
+        }
+      }
+    }
+  }
+</script>
+
+<style>
+  :root { --grain-opacity: 0.035; }
+  html { scroll-behavior: smooth; }
+  body { font-feature-settings: "ss01"; }
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,.8,.24,1), transform .7s cubic-bezier(.16,.8,.24,1); }
+  .reveal.is-visible { opacity: 1; transform: translateY(0); }
+  .stagger > * { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+  .stagger.is-visible > * { opacity: 1; transform: translateY(0); }
+  .stagger.is-visible > *:nth-child(1){transition-delay:.03s} .stagger.is-visible > *:nth-child(2){transition-delay:.08s}
+  .stagger.is-visible > *:nth-child(3){transition-delay:.13s} .stagger.is-visible > *:nth-child(4){transition-delay:.18s}
+  .stagger.is-visible > *:nth-child(5){transition-delay:.23s} .stagger.is-visible > *:nth-child(6){transition-delay:.28s}
+  .stagger.is-visible > *:nth-child(7){transition-delay:.33s} .stagger.is-visible > *:nth-child(8){transition-delay:.38s}
+  .stagger.is-visible > *:nth-child(9){transition-delay:.43s} .stagger.is-visible > *:nth-child(10){transition-delay:.48s}
+  .stagger.is-visible > *:nth-child(11){transition-delay:.53s} .stagger.is-visible > *:nth-child(12){transition-delay:.58s}
+  .stagger.is-visible > *:nth-child(13){transition-delay:.63s} .stagger.is-visible > *:nth-child(14){transition-delay:.68s}
+  .stagger.is-visible > *:nth-child(15){transition-delay:.73s} .stagger.is-visible > *:nth-child(16){transition-delay:.78s}
+  .stagger.is-visible > *:nth-child(17){transition-delay:.83s} .stagger.is-visible > *:nth-child(18){transition-delay:.88s}
+
+  .grid-cell { transition: background-color 1.1s ease, box-shadow 1.1s ease; }
+  .bg-grain::before {
+    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: var(--grain-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .type-scale-hero { font-size: clamp(2.6rem, 6vw, 5rem); line-height: 1.02; letter-spacing: -0.02em; }
+  ::selection { background: #B4922E; color: #0B1F3A; }
+  .focus-ring:focus-visible { outline: 2px solid #B4922E; outline-offset: 3px; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .stagger > *, .grid-cell { transition: none !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .stagger > * { opacity: 1 !important; transform: none !important; }
+  }
+  .card-hover { transition: transform .35s cubic-bezier(.16,.8,.24,1), box-shadow .35s ease, border-color .35s ease; }
+  .card-hover:hover { transform: translateY(-6px); }
+  .badge-pop { transition: transform .25s ease, background-color .25s ease, color .25s ease, border-color .25s ease; }
+  .badge-pop:hover { transform: translateY(-3px) scale(1.03); }
+  .underline-grow { position: relative; }
+  .underline-grow::after { content:''; position:absolute; left:0; bottom:-4px; height:1px; width:0; background:#B4922E; transition:width .35s ease; }
+  .underline-grow:hover::after { width:100%; }
+  .nav-link.active { color: #B4922E; }
+</style>
+</head>
+
+<body class="bg-white dark:bg-navy-deep text-ink-900 dark:text-ink-100 font-sans antialiased transition-colors duration-500">
+
+<!-- ================= NAV ================= -->
+<header id="top" class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-white/80 dark:bg-navy-deep/80 border-b border-ink-900/5 dark:border-white/5 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-3 group focus-ring rounded-sm">
+      <span class="flex items-center justify-center w-10 h-10 rounded-full border border-gold/50 text-gold font-display font-semibold text-sm">AE</span>
+      <span class="hidden sm:flex flex-col leading-none">
+        <span class="font-display font-semibold tracking-tight text-[15px]">Alaaeddine Errachid</span>
+        <span class="font-mono text-[10px] tracking-widest text-ink-500 uppercase">GRC · QHSE Consulting</span>
+      </span>
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-9 font-medium text-sm">
+      <a href="#about" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">About</a>
+      <a href="#services" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">Services</a>
+      <a href="#portfolio" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">Portfolio</a>
+      <a href="#skills" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">Skills</a>
+      <a href="#journey" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">Journey</a>
+      <a href="#insights" class="nav-link underline-grow text-ink-700 dark:text-ink-300 hover:text-navy dark:hover:text-white transition-colors">Insights</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button id="themeToggle" aria-label="Toggle dark mode" class="focus-ring w-10 h-10 rounded-full border border-ink-900/10 dark:border-white/15 flex items-center justify-center text-ink-700 dark:text-ink-100 hover:border-gold hover:text-gold transition-colors">
+        <svg id="iconSun" class="w-[18px] h-[18px] hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.6 4.6l1.7 1.7M17.7 17.7l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.6 19.4l1.7-1.7M17.7 6.3l1.7-1.7" stroke-linecap="round"/></svg>
+        <svg id="iconMoon" class="w-[18px] h-[18px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 focus-ring bg-navy dark:bg-gold text-white dark:text-navy-deep font-medium text-sm px-5 py-2.5 rounded-full hover:bg-navy-2 dark:hover:bg-gold-light transition-colors">
+        Get in Touch
+      </a>
+      <button id="menuToggle" aria-label="Open menu" class="lg:hidden focus-ring w-10 h-10 rounded-full border border-ink-900/10 dark:border-white/15 flex items-center justify-center">
+        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- mobile menu -->
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-ink-900/5 dark:border-white/5 bg-white dark:bg-navy-deep px-6 py-6 flex flex-col gap-5 font-medium text-sm">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#portfolio" class="mobile-link">Portfolio</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#journey" class="mobile-link">Journey</a>
+    <a href="#insights" class="mobile-link">Insights</a>
+    <a href="#contact" class="mobile-link text-gold">Contact</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="relative overflow-hidden bg-white dark:bg-navy-deep pt-40 pb-28 lg:pt-48 lg:pb-36 transition-colors duration-500">
+  <div class="absolute inset-0 bg-gradient-to-b from-ink-100/60 dark:from-navy-surface/40 to-transparent pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative grid lg:grid-cols-[1.1fr,0.9fr] gap-16 items-center">
+    <div class="reveal" id="heroText">
+      <div class="inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.18em] uppercase text-gold border border-gold/40 rounded-full px-4 py-1.5 mb-8">
+        <span class="w-1.5 h-1.5 rounded-full bg-gold"></span>
+        Ref. GRC-01 · Governance · Risk · Compliance
+      </div>
+      <h1 class="type-scale-hero font-display font-semibold text-navy dark:text-white">
+        Alaaeddine<br>Errachid
+      </h1>
+      <p class="mt-6 font-display text-lg sm:text-xl text-ink-700 dark:text-ink-300 max-w-xl">
+        Junior Consultant — Governance, Risk Management, Compliance, QHSE & Information Security.
+      </p>
+      <p class="mt-5 text-ink-500 dark:text-ink-300/80 max-w-xl leading-relaxed">
+        Helping organizations strengthen governance, manage risk and improve operational performance — with a methodical, evidence-based approach built on ISO management systems and structured risk analysis.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center gap-4">
+        <a href="#services" class="focus-ring inline-flex items-center gap-2 bg-navy dark:bg-gold text-white dark:text-navy-deep font-medium px-7 py-3.5 rounded-full hover:bg-navy-2 dark:hover:bg-gold-light transition-colors shadow-soft">
+          Explore Services
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#contact" class="focus-ring inline-flex items-center gap-2 border border-ink-900/15 dark:border-white/20 text-navy dark:text-white font-medium px-7 py-3.5 rounded-full hover:border-gold hover:text-gold transition-colors">
+          Start a Conversation
+        </a>
+      </div>
+
+      <dl class="mt-14 grid grid-cols-3 gap-6 max-w-lg border-t border-ink-900/10 dark:border-white/10 pt-8">
+        <div>
+          <dt class="font-mono text-[10px] tracking-widest uppercase text-ink-500">Degree</dt>
+          <dd class="mt-1 font-display font-semibold text-navy dark:text-white text-sm">QHSE Master's</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[10px] tracking-widest uppercase text-ink-500">Frameworks</dt>
+          <dd class="mt-1 font-display font-semibold text-navy dark:text-white text-sm">ISO 9001 · 14001 · 45001 · 27001</dd>
+        </div>
+        <div>
+          <dt class="font-mono text-[10px] tracking-widest uppercase text-ink-500">Regulatory</dt>
+          <dd class="mt-1 font-display font-semibold text-navy dark:text-white text-sm">GDPR · NIS2 · DORA</dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- Signature visual: animated risk matrix -->
+    <div class="reveal" style="transition-delay:.15s">
+      <div class="relative rounded-3xl bg-navy dark:bg-navy-surface p-8 sm:p-10 shadow-lift overflow-hidden bg-grain">
+        <div class="relative flex items-center justify-between mb-6">
+          <span class="font-mono text-[10px] tracking-widest uppercase text-gold-light/80">Risk Mapping · Likelihood × Impact</span>
+          <span class="font-mono text-[10px] text-white/40">ISO 27002 Taxonomy</span>
+        </div>
+        <div id="riskGrid" class="relative grid grid-cols-5 gap-2" aria-hidden="true"></div>
+        <div class="relative mt-6 flex items-center justify-between font-mono text-[10px] text-white/40">
+          <span>Low</span>
+          <span class="text-white/50">Impact →</span>
+          <span>High</span>
+        </div>
+        <div class="relative mt-8 pt-6 border-t border-white/10 flex items-center gap-3">
+          <svg class="w-8 h-8 text-gold shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l7 3v6c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3Z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="text-white/70 text-sm leading-snug">Risk registers and heat maps built to support real decision-making — not just checkbox compliance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-28 bg-ink-100/60 dark:bg-navy-surface/30 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-[0.85fr,1.15fr] gap-16 items-start">
+    <div class="reveal">
+      <div class="relative w-full max-w-sm mx-auto lg:mx-0 aspect-[4/5] rounded-3xl bg-gradient-to-br from-navy to-navy-2 dark:from-navy-surface dark:to-navy-deep flex items-center justify-center shadow-lift">
+        <span class="font-display text-white text-7xl font-semibold tracking-tight">AE</span>
+        <div class="absolute bottom-6 left-6 right-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 px-5 py-4">
+          <p class="font-mono text-[10px] tracking-widest uppercase text-gold-light">Doc. Ref</p>
+          <p class="text-white text-sm font-medium mt-1">Junior Consultant — GRC / QHSE</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.1s">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. ABT-01 · About</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">Early-career, evidence-based, built to be audited.</h2>
+      <p class="mt-6 text-ink-700 dark:text-ink-300 leading-relaxed">
+        Alaaeddine Errachid is an early-career consultant building a focused specialization at the intersection of governance, risk management, compliance and quality-health-safety-environment (QHSE) systems. He holds a Professional Master's Degree in QHSE Management and approaches every engagement the way he approaches a management system: methodically, evidence-based, and structured for review.
+      </p>
+      <p class="mt-4 text-ink-700 dark:text-ink-300 leading-relaxed">
+        During internships at Qualipro by Imagine Human, he contributed to integrated management system diagnostics, ISO 9001 and ISO/IEC 27001 compliance work, information security risk identification, risk register and risk mapping exercises, and regulatory monitoring covering GDPR, NIS2 and DORA. That practical exposure — combined with academic training grounded in quality, risk and continuous improvement — shapes a consulting style that favors clarity over jargon and documented rigor over shortcuts.
+      </p>
+      <p class="mt-4 text-ink-700 dark:text-ink-300 leading-relaxed">
+        He is honest about where he is: an ambitious junior consultant with strong academic preparation and hands-on internship experience, actively building a practice and looking for organizations ready to invest in getting governance, risk and compliance right from the ground up.
+      </p>
+
+      <div class="mt-8 grid sm:grid-cols-2 gap-4">
+        <div class="flex items-start gap-3 bg-white dark:bg-navy-surface/60 border border-ink-900/5 dark:border-white/10 rounded-xl p-4">
+          <svg class="w-5 h-5 text-gold shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="text-sm text-ink-700 dark:text-ink-300">Professional Master's Degree in QHSE Management</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white dark:bg-navy-surface/60 border border-ink-900/5 dark:border-white/10 rounded-xl p-4">
+          <svg class="w-5 h-5 text-gold shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="text-sm text-ink-700 dark:text-ink-300">Hands-on internship experience at Qualipro by Imagine Human</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white dark:bg-navy-surface/60 border border-ink-900/5 dark:border-white/10 rounded-xl p-4">
+          <svg class="w-5 h-5 text-gold shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="text-sm text-ink-700 dark:text-ink-300">Applied ISO 9001, 14001, 45001 & 27001 exposure</p>
+        </div>
+        <div class="flex items-start gap-3 bg-white dark:bg-navy-surface/60 border border-ink-900/5 dark:border-white/10 rounded-xl p-4">
+          <svg class="w-5 h-5 text-gold shrink-0 mt-0.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12l5 5L20 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <p class="text-sm text-ink-700 dark:text-ink-300">Regulatory monitoring: GDPR, NIS2 & DORA</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-28 bg-white dark:bg-navy-deep transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. SRV-01 · Services</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">A structured practice, from governance to documentation.</h2>
+      <p class="mt-4 text-ink-500 dark:text-ink-300">Ten focused service lines, each delivered with clear deliverables and measurable benefits.</p>
+    </div>
+
+    <div id="servicesGrid" class="stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Service cards injected via template below for consistency -->
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section id="portfolio" class="py-28 bg-ink-100/60 dark:bg-navy-surface/30 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. PRJ-01 · Project Highlights</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">Applied work from the Qualipro internships.</h2>
+      <p class="mt-4 text-ink-500 dark:text-ink-300 max-w-2xl">Selected contributions during internships at Qualipro by Imagine Human — presented as they occurred, within a supervised, team-based setting.</p>
+    </div>
+
+    <div id="portfolioGrid" class="stagger grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="py-28 bg-navy dark:bg-navy-deep relative overflow-hidden transition-colors duration-500">
+  <div class="absolute inset-0 bg-grain opacity-40 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative">
+    <div class="reveal max-w-2xl mb-14">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold-light">Ref. SKL-01 · Capabilities</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-white">Grounded, applied competencies.</h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <div>
+        <h3 class="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">Management Systems</h3>
+        <div class="stagger flex flex-wrap gap-3" id="skillsA"></div>
+      </div>
+      <div>
+        <h3 class="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">Risk & Audit</h3>
+        <div class="stagger flex flex-wrap gap-3" id="skillsB"></div>
+      </div>
+      <div>
+        <h3 class="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">Governance & Process</h3>
+        <div class="stagger flex flex-wrap gap-3" id="skillsC"></div>
+      </div>
+      <div>
+        <h3 class="font-mono text-[11px] tracking-widest uppercase text-white/50 mb-4">Tools</h3>
+        <div class="stagger flex flex-wrap gap-3" id="skillsD"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section id="journey" class="py-28 bg-white dark:bg-navy-deep transition-colors duration-500">
+  <div class="max-w-5xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. TML-01 · Journey</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">Education and experience, in sequence.</h2>
+    </div>
+
+    <div id="timeline" class="relative pl-8 sm:pl-10 border-l border-ink-900/10 dark:border-white/10 space-y-12"></div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-28 bg-ink-100/60 dark:bg-navy-surface/30 transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. TST-01 · Feedback</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">What supervisors and mentors say.</h2>
+    </div>
+    <div class="stagger grid md:grid-cols-3 gap-6" id="testimonials"></div>
+  </div>
+</section>
+
+<!-- ================= BLOG / INSIGHTS ================= -->
+<section id="insights" class="py-28 bg-white dark:bg-navy-deep transition-colors duration-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="reveal max-w-2xl mb-16">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold">Ref. INS-01 · Insights</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-navy dark:text-white">Notes on governance, risk & compliance.</h2>
+    </div>
+    <div class="stagger grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="blogGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-28 bg-navy dark:bg-navy-surface relative overflow-hidden transition-colors duration-500">
+  <div class="absolute inset-0 bg-grain opacity-40 pointer-events-none"></div>
+  <div class="max-w-7xl mx-auto px-6 lg:px-10 relative grid lg:grid-cols-2 gap-16">
+    <div class="reveal">
+      <span class="font-mono text-[11px] tracking-[0.18em] uppercase text-gold-light">Ref. CTC-01 · Contact</span>
+      <h2 class="mt-4 font-display font-semibold text-3xl sm:text-4xl text-white">Let's talk about governance, risk & compliance.</h2>
+      <p class="mt-5 text-white/70 leading-relaxed max-w-md">Open to internships, junior consulting roles and small-scope GRC / QHSE engagements. Reach out and I'll respond within one to two business days.</p>
+
+      <div class="mt-10 space-y-5">
+        <a href="mailto:contact@alaaeddine-errachid.com" class="flex items-center gap-4 group focus-ring rounded-lg">
+          <span class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-gold-light group-hover:border-gold transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-white/85 group-hover:text-white transition-colors">contact@alaaeddine-errachid.com</span>
+        </a>
+        <a href="tel:+212600000000" class="flex items-center gap-4 group focus-ring rounded-lg">
+          <span class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-gold-light group-hover:border-gold transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 5c0 8.3 6.7 15 15 15l3-4-6-3-2 2c-2.5-1.3-4.7-3.5-6-6l2-2-3-6-4 0 1 4Z" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="text-white/85 group-hover:text-white transition-colors">+212 6 00 00 00 00</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="flex items-center gap-4 group focus-ring rounded-lg">
+          <span class="w-11 h-11 rounded-full border border-white/20 flex items-center justify-center text-gold-light group-hover:border-gold transition-colors">
+            <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7.2v.01M11 17v-4.5c0-1.4 1-2.5 2.5-2.5S16 11.1 16 12.5V17" stroke-linecap="round"/></svg>
+          </span>
+          <span class="text-white/85 group-hover:text-white transition-colors">linkedin.com/in/alaaeddine-errachid</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="reveal" style="transition-delay:.1s">
+      <form id="contactForm" class="bg-white dark:bg-navy-deep rounded-3xl p-8 sm:p-10 shadow-lift space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block font-mono text-[10px] tracking-widest uppercase text-ink-500 mb-2">Name</label>
+            <input required id="name" name="name" type="text" class="focus-ring w-full rounded-lg border border-ink-900/15 dark:border-white/15 bg-transparent px-4 py-3 text-sm text-navy dark:text-white placeholder:text-ink-500/50" placeholder="Your full name">
+          </div>
+          <div>
+            <label for="email" class="block font-mono text-[10px] tracking-widest uppercase text-ink-500 mb-2">Email</label>
+            <input required id="email" name="email" type="email" class="focus-ring w-full rounded-lg border border-ink-900/15 dark:border-white/15 bg-transparent px-4 py-3 text-sm text-navy dark:text-white placeholder:text-ink-500/50" placeholder="you@company.com">
+          </div>
+        </div>
+        <div>
+          <label for="subject" class="block font-mono text-[10px] tracking-widest uppercase text-ink-500 mb-2">Subject</label>
+          <input required id="subject" name="subject" type="text" class="focus-ring w-full rounded-lg border border-ink-900/15 dark:border-white/15 bg-transparent px-4 py-3 text-sm text-navy dark:text-white placeholder:text-ink-500/50" placeholder="What can I help with?">
+        </div>
+        <div>
+          <label for="message" class="block font-mono text-[10px] tracking-widest uppercase text-ink-500 mb-2">Message</label>
+          <textarea required id="message" name="message" rows="4" class="focus-ring w-full rounded-lg border border-ink-900/15 dark:border-white/15 bg-transparent px-4 py-3 text-sm text-navy dark:text-white placeholder:text-ink-500/50 resize-none" placeholder="Tell me a bit about your project or opportunity"></textarea>
+        </div>
+        <button type="submit" class="focus-ring w-full bg-navy dark:bg-gold text-white dark:text-navy-deep font-medium px-7 py-3.5 rounded-full hover:bg-navy-2 dark:hover:bg-gold-light transition-colors">
+          Send Message
+        </button>
+        <p id="formStatus" class="hidden text-sm text-center font-medium"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-navy-deep text-white/70 py-16">
+  <div class="max-w-7xl mx-auto px-6 lg:px-10">
+    <div class="grid md:grid-cols-4 gap-10">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-3">
+          <span class="flex items-center justify-center w-9 h-9 rounded-full border border-gold/50 text-gold font-display font-semibold text-xs">AE</span>
+          <span class="font-display font-semibold text-white">Alaaeddine Errachid</span>
+        </div>
+        <p class="mt-4 text-sm max-w-sm leading-relaxed">Helping organizations strengthen governance, manage risk and improve operational performance.</p>
+        <div class="flex items-center gap-3 mt-6">
+          <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn" class="focus-ring w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7.2v.01M11 17v-4.5c0-1.4 1-2.5 2.5-2.5S16 11.1 16 12.5V17" stroke-linecap="round"/></svg>
+          </a>
+          <a href="mailto:contact@alaaeddine-errachid.com" aria-label="Email" class="focus-ring w-9 h-9 rounded-full border border-white/15 flex items-center justify-center hover:border-gold hover:text-gold transition-colors">
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h4 class="font-mono text-[10px] tracking-widest uppercase text-white/40 mb-4">Navigate</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#about" class="hover:text-gold transition-colors">About</a></li>
+          <li><a href="#services" class="hover:text-gold transition-colors">Services</a></li>
+          <li><a href="#portfolio" class="hover:text-gold transition-colors">Portfolio</a></li>
+          <li><a href="#insights" class="hover:text-gold transition-colors">Insights</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-mono text-[10px] tracking-widest uppercase text-white/40 mb-4">Contact</h4>
+        <ul class="space-y-2 text-sm">
+          <li>contact@alaaeddine-errachid.com</li>
+          <li>+212 6 00 00 00 00</li>
+          <li>linkedin.com/in/alaaeddine-errachid</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
+      <p>© <span id="year"></span> Alaaeddine Errachid. All rights reserved.</p>
+      <p class="font-mono">Doc. Ref: SITE-AE-<span id="revNum">01</span> · Rev. 1.0</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============ THEME TOGGLE ============ */
+const root = document.documentElement;
+const themeToggle = document.getElementById('themeToggle');
+const iconSun = document.getElementById('iconSun');
+const iconMoon = document.getElementById('iconMoon');
+let isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+function applyTheme() {
+  root.classList.toggle('dark', isDark);
+  iconSun.classList.toggle('hidden', !isDark);
+  iconMoon.classList.toggle('hidden', isDark);
+}
+applyTheme();
+themeToggle.addEventListener('click', () => { isDark = !isDark; applyTheme(); });
+
+/* ============ MOBILE MENU ============ */
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileMenu.classList.add('hidden')));
+document.querySelectorAll('.mobile-link').forEach(l => l.classList.add('block','text-ink-700','dark:text-ink-300'));
+
+/* ============ FOOTER YEAR ============ */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ============ RISK MATRIX GRID ============ */
+const riskGrid = document.getElementById('riskGrid');
+const riskPattern = [
+  1,1,2,2,3, 1,2,2,3,4, 2,2,3,4,4, 2,3,4,4,5, 3,4,4,5,5
+];
+riskPattern.forEach((level, i) => {
+  const cell = document.createElement('div');
+  cell.className = 'grid-cell aspect-square rounded-md';
+  cell.style.background = 'rgba(255,255,255,0.06)';
+  cell.dataset.level = level;
+  riskGrid.appendChild(cell);
+});
+const levelColors = {
+  1: 'rgba(255,255,255,0.08)',
+  2: 'rgba(180,146,46,0.25)',
+  3: 'rgba(180,146,46,0.45)',
+  4: 'rgba(180,146,46,0.7)',
+  5: 'rgba(212,185,104,0.95)'
+};
+function pulseRiskGrid() {
+  const cells = riskGrid.children;
+  Array.from(cells).forEach((cell, i) => {
+    setTimeout(() => {
+      cell.style.background = levelColors[cell.dataset.level];
+      cell.style.boxShadow = cell.dataset.level >= 4 ? '0 0 14px rgba(180,146,46,0.35)' : 'none';
+    }, i * 28);
+  });
+}
+setTimeout(pulseRiskGrid, 500);
+setInterval(pulseRiskGrid, 6000);
+
+/* ============ SERVICES DATA ============ */
+const services = [
+  { icon: 'shield', title: 'Governance & Compliance', desc: 'Structuring governance frameworks and compliance programs aligned to recognized standards and regulatory expectations.', deliverables: ['Governance framework review','Compliance gap assessment','Policy & procedure alignment'], benefits: ['Clear accountability structures','Reduced regulatory exposure'] },
+  { icon: 'chart', title: 'Risk Management', desc: 'Identifying, assessing and mapping organizational risks to support informed, prioritized decision-making.', deliverables: ['Risk identification workshops','Risk register & taxonomy (ISO 27002)','Risk mapping / cartography'], benefits: ['Prioritized risk treatment','Board-ready risk visibility'] },
+  { icon: 'file', title: 'ISO Documentation', desc: 'Building and reviewing documentation for ISO 9001, 14001, 45001 and 27001 management systems.', deliverables: ['Document control structure','Procedure & work instruction drafting','Documentation gap review'], benefits: ['Audit-ready documentation','Consistent process execution'] },
+  { icon: 'check', title: 'Internal Audit Support', desc: 'Preparing organizations for internal and certification audits through structured readiness reviews.', deliverables: ['Audit checklist preparation','Evidence & documentation review','Non-conformity tracking support'], benefits: ['Smoother certification audits','Fewer findings & re-audits'] },
+  { icon: 'lock', title: 'Information Security', desc: 'Supporting ISMS implementation and information security risk practices aligned with ISO/IEC 27001.', deliverables: ['ISMS documentation support','Security risk assessment','Asset & threat taxonomy'], benefits: ['Stronger security posture','Certification readiness'] },
+  { icon: 'refresh', title: 'Process Improvement', desc: 'Applying PDCA, root cause analysis and CAPA to strengthen operational performance.', deliverables: ['Process mapping','Root cause analysis','CAPA plan development'], benefits: ['Fewer recurring issues','Measurable efficiency gains'] },
+  { icon: 'radar', title: 'Regulatory Monitoring', desc: 'Tracking regulatory developments — including GDPR, NIS2 and DORA — relevant to your organization.', deliverables: ['Regulatory watch reports','Applicability assessments','Compliance action tracking'], benefits: ['Early visibility on obligations','Reduced compliance risk'] },
+  { icon: 'leaf', title: 'ESG / Sustainability Support', desc: 'Supporting sustainability and ESG initiatives grounded in QHSE and management systems experience.', deliverables: ['ESG documentation support','Sustainability reporting inputs','Environmental & social risk review'], benefits: ['Structured ESG foundations','Stakeholder-ready reporting'] },
+  { icon: 'doc', title: 'Professional Documentation', desc: 'Producing clear, audit-ready professional documents — from procedures to management reports.', deliverables: ['Report & procedure writing','Documentation formatting & control','KPI dashboards & summaries'], benefits: ['Professional, consistent output','Time saved on internal drafting'] },
+  { icon: 'user', title: 'CV & LinkedIn Optimization', desc: 'Helping GRC, QHSE and compliance professionals present their experience clearly and credibly.', deliverables: ['CV structure & rewrite','LinkedIn profile optimization','Personal positioning guidance'], benefits: ['Clearer professional narrative','Stronger first impression'] }
+];
+const icons = {
+  shield: '<path d="M12 3l7 3v6c0 4.6-3 7.6-7 9-4-1.4-7-4.4-7-9V6l7-3Z"/>',
+  chart: '<path d="M4 19V9M10 19V5M16 19v-7M22 19H2" stroke-linecap="round"/>',
+  file: '<path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4" stroke-linejoin="round"/>',
+  check: '<rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 12l2.5 2.5L16 9" stroke-linecap="round" stroke-linejoin="round"/>',
+  lock: '<rect x="4.5" y="10.5" width="15" height="10" rx="1.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/>',
+  refresh: '<path d="M20 11A8 8 0 0 0 6.3 6.3M4 13a8 8 0 0 0 13.7 4.7" stroke-linecap="round"/><path d="M20 4v5h-5M4 20v-5h5" stroke-linecap="round" stroke-linejoin="round"/>',
+  radar: '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12L18 6" stroke-linecap="round"/>',
+  leaf: '<path d="M5 19c8 0 14-6 14-14-8 0-14 6-14 14Z"/><path d="M5 19c2-4 5-7 9-9" stroke-linecap="round"/>',
+  doc: '<path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4" stroke-linecap="round"/>',
+  user: '<circle cx="12" cy="8" r="3.4"/><path d="M5 20c1.4-3.8 4-5.6 7-5.6s5.6 1.8 7 5.6" stroke-linecap="round"/>'
+};
+function svgIcon(name, cls) {
+  return `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">${icons[name]}</svg>`;
+}
+const servicesGrid = document.getElementById('servicesGrid');
+services.forEach((s, i) => {
+  const card = document.createElement('div');
+  card.className = 'card-hover group rounded-2xl border border-ink-900/8 dark:border-white/10 bg-white dark:bg-navy-surface/40 p-7 hover:shadow-lift hover:border-gold/40';
+  card.innerHTML = `
+    <div class="flex items-center justify-between mb-5">
+      <span class="w-12 h-12 rounded-xl bg-navy/5 dark:bg-white/5 flex items-center justify-center text-navy dark:text-gold-light group-hover:bg-gold/10 group-hover:text-gold transition-colors">
+        ${svgIcon(s.icon, 'w-6 h-6')}
+      </span>
+      <span class="font-mono text-[10px] text-ink-500 dark:text-white/30">SRV-${String(i+1).padStart(2,'0')}</span>
+    </div>
+    <h3 class="font-display font-semibold text-lg text-navy dark:text-white">${s.title}</h3>
+    <p class="mt-2 text-sm text-ink-500 dark:text-ink-300/80 leading-relaxed">${s.desc}</p>
+    <div class="mt-5 pt-5 border-t border-ink-900/8 dark:border-white/10">
+      <p class="font-mono text-[10px] tracking-widest uppercase text-gold mb-2">Deliverables</p>
+      <ul class="space-y-1.5">
+        ${s.deliverables.map(d => `<li class="flex items-start gap-2 text-sm text-ink-700 dark:text-ink-300"><span class="w-1 h-1 rounded-full bg-gold mt-2 shrink-0"></span>${d}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="mt-4">
+      <p class="font-mono text-[10px] tracking-widest uppercase text-ink-500 mb-2">Benefits</p>
+      <ul class="space-y-1.5">
+        ${s.benefits.map(b => `<li class="flex items-start gap-2 text-sm text-ink-500 dark:text-ink-300/70"><span class="w-1 h-1 rounded-full bg-ink-500/50 mt-2 shrink-0"></span>${b}</li>`).join('')}
+      </ul>
+    </div>
+  `;
+  servicesGrid.appendChild(card);
+});
+
+/* ============ PORTFOLIO DATA ============ */
+const projects = [
+  { tag: 'Information Security', title: 'Information Security Risk Assessment', desc: 'Contributed to identifying and assessing information security risks as part of an ISMS initiative, applying a risk taxonomy based on ISO/IEC 27002.' },
+  { tag: 'Quality Management', title: 'ISO 9001 Documentation Review', desc: 'Reviewed and helped structure quality management documentation to close gaps ahead of certification milestones.' },
+  { tag: 'Risk Management', title: 'Risk Register Development', desc: 'Built and maintained a structured risk register, aligning identified risks with treatment ownership and monitoring status.' },
+  { tag: 'Integrated Systems', title: 'Integrated Management System Gap Assessment', desc: 'Supported a diagnostic review of an integrated management system covering ISO 9001 and ISO 27001 requirements.' },
+  { tag: 'Internal Audit', title: 'Internal Audit Preparation', desc: 'Helped prepare audit checklists and organize documentary evidence ahead of internal and certification audits.' },
+  { tag: 'Regulatory', title: 'Regulatory Compliance Mapping', desc: 'Monitored and mapped applicability of GDPR, NIS2 and DORA requirements against organizational processes.' }
+];
+const portfolioGrid = document.getElementById('portfolioGrid');
+projects.forEach((p, i) => {
+  const card = document.createElement('div');
+  card.className = 'card-hover rounded-2xl border border-ink-900/8 dark:border-white/10 bg-white dark:bg-navy-surface/40 p-7 hover:shadow-lift hover:border-gold/40';
+  card.innerHTML = `
+    <div class="flex items-center justify-between mb-4">
+      <span class="font-mono text-[10px] tracking-widest uppercase text-gold border border-gold/30 rounded-full px-3 py-1">${p.tag}</span>
+      <span class="font-mono text-[10px] text-ink-500 dark:text-white/30">PRJ-${String(i+1).padStart(2,'0')}</span>
+    </div>
+    <h3 class="font-display font-semibold text-lg text-navy dark:text-white">${p.title}</h3>
+    <p class="mt-2 text-sm text-ink-500 dark:text-ink-300/80 leading-relaxed">${p.desc}</p>
+    <p class="mt-5 pt-4 border-t border-ink-900/8 dark:border-white/10 font-mono text-[10px] text-ink-500 dark:text-white/30">Context — Qualipro by Imagine Human Internship</p>
+  `;
+  portfolioGrid.appendChild(card);
+});
+
+/* ============ SKILLS DATA ============ */
+const skillGroups = {
+  skillsA: ['ISO 9001','ISO 14001','ISO 45001','ISO 27001','Integrated Management Systems'],
+  skillsB: ['Risk Assessment','Risk Mapping','Internal Audit','ISMS','Root Cause Analysis','CAPA'],
+  skillsC: ['Governance','Compliance','Process Mapping','PDCA','Continuous Improvement','Documentation Control'],
+  skillsD: ['Qualipro Software','Microsoft Office','Microsoft Forms']
+};
+Object.entries(skillGroups).forEach(([id, list]) => {
+  const el = document.getElementById(id);
+  list.forEach(skill => {
+    const badge = document.createElement('span');
+    badge.className = 'badge-pop font-mono text-xs tracking-wide px-4 py-2 rounded-full border border-white/15 text-white/80 hover:bg-gold hover:text-navy-deep hover:border-gold cursor-default';
+    badge.textContent = skill;
+    el.appendChild(badge);
+  });
+});
+
+/* ============ TIMELINE DATA ============ */
+const timelineData = [
+  { type: 'Education', date: 'Rev. 01', title: "Bachelor's Degree in Medical Biology", desc: 'Built a foundation in scientific rigor, structured analysis and evidence-based reasoning.' },
+  { type: 'Experience', date: 'Rev. 02', title: 'Hospital Internships', desc: 'Early field exposure to structured procedures, documentation discipline and quality-sensitive environments.' },
+  { type: 'Education', date: 'Rev. 03', title: "Professional Master's Degree in QHSE Management", desc: 'Specialized in quality, health, safety, environment and management systems — the pivot toward GRC consulting.' },
+  { type: 'Experience', date: 'Rev. 04', title: 'Qualipro Summer Internship', desc: 'Contributed to IMS diagnostics, ISO 9001/27001 compliance work and documentation review at Qualipro by Imagine Human.' },
+  { type: 'Experience', date: 'Rev. 05', title: 'Qualipro End-of-Studies Internship', desc: 'Extended focus on risk register development, risk mapping, ISMS support and regulatory monitoring (GDPR, NIS2, DORA).' }
+];
+const timelineEl = document.getElementById('timeline');
+timelineData.forEach(item => {
+  const row = document.createElement('div');
+  row.className = 'reveal relative';
+  row.innerHTML = `
+    <span class="absolute -left-[38px] sm:-left-[46px] top-1 w-3 h-3 rounded-full bg-gold ring-4 ring-white dark:ring-navy-deep"></span>
+    <div class="flex flex-wrap items-center gap-3 mb-1">
+      <span class="font-mono text-[10px] tracking-widest uppercase text-gold">${item.date}</span>
+      <span class="font-mono text-[10px] tracking-widest uppercase text-ink-500">${item.type}</span>
+    </div>
+    <h3 class="font-display font-semibold text-lg text-navy dark:text-white">${item.title}</h3>
+    <p class="mt-1.5 text-sm text-ink-500 dark:text-ink-300/80 max-w-xl leading-relaxed">${item.desc}</p>
+  `;
+  timelineEl.appendChild(row);
+});
+
+/* ============ TESTIMONIALS DATA ============ */
+const testimonials = [
+  { quote: 'Alaaeddine approached the risk register with real discipline — every entry traceable, every owner clear. That level of structure is rare from someone this early in their career.', name: 'Karim B.', role: 'Internship Supervisor, Qualipro by Imagine Human' },
+  { quote: "What stood out during the Master's program was his ability to connect ISO frameworks to practical business outcomes rather than treating them as boxes to tick.", name: 'Dr. Salma T.', role: "Academic Mentor, QHSE Master's Program" },
+  { quote: 'On the ISMS and audit prep work, Alaaeddine was thorough and easy to collaborate with — exactly the kind of teammate you want on a compliance deadline.', name: 'Yassine M.', role: 'Peer Consultant, Qualipro by Imagine Human' }
+];
+const testimonialsGrid = document.getElementById('testimonials');
+testimonials.forEach(t => {
+  const card = document.createElement('div');
+  card.className = 'card-hover rounded-2xl border border-ink-900/8 dark:border-white/10 bg-white dark:bg-navy-surface/40 p-7';
+  card.innerHTML = `
+    <svg class="w-7 h-7 text-gold/40 mb-4" viewBox="0 0 24 24" fill="currentColor"><path d="M7 7c-2.2 0-4 1.8-4 4v6h6v-6H6.2C6.6 9.5 8 8.4 9.5 8V6C8.2 6 7 6.4 7 7Zm10 0c-2.2 0-4 1.8-4 4v6h6v-6h-2.8c.4-1.5 1.8-2.6 3.3-3V6c-1.3 0-2.5.4-2.5 1Z"/></svg>
+    <p class="text-sm text-ink-700 dark:text-ink-300 leading-relaxed">"${t.quote}"</p>
+    <div class="mt-5 pt-4 border-t border-ink-900/8 dark:border-white/10">
+      <p class="font-display font-semibold text-sm text-navy dark:text-white">${t.name}</p>
+      <p class="font-mono text-[10px] tracking-wide text-ink-500 mt-0.5">${t.role}</p>
+    </div>
+  `;
+  testimonialsGrid.appendChild(card);
+});
+
+/* ============ BLOG DATA ============ */
+const posts = [
+  { tag: 'Information Security', title: 'How ISO 27001 Improves Business Resilience', excerpt: 'A risk-based approach to information security helps organizations anticipate disruption instead of reacting to it.', read: '5 min' },
+  { tag: 'Risk Management', title: 'Building Effective Risk Registers', excerpt: 'A good risk register is more than a spreadsheet — it needs clear ownership, treatment status and regular review.', read: '4 min' },
+  { tag: 'Internal Audit', title: 'Preparing for Internal Audits', excerpt: 'Structured evidence and clear documentation turn internal audits from a stressful event into a routine checkpoint.', read: '4 min' },
+  { tag: 'QHSE', title: 'Digital Transformation in QHSE', excerpt: 'Tools like Qualipro are changing how quality, health, safety and environment data gets captured and monitored.', read: '6 min' }
+];
+const blogGrid = document.getElementById('blogGrid');
+posts.forEach(p => {
+  const card = document.createElement('a');
+  card.href = '#insights';
+  card.className = 'card-hover group block rounded-2xl border border-ink-900/8 dark:border-white/10 bg-white dark:bg-navy-surface/40 p-6 hover:shadow-lift hover:border-gold/40';
+  card.innerHTML = `
+    <span class="font-mono text-[10px] tracking-widest uppercase text-gold">${p.tag}</span>
+    <h3 class="mt-3 font-display font-semibold text-navy dark:text-white leading-snug group-hover:text-gold transition-colors">${p.title}</h3>
+    <p class="mt-2 text-sm text-ink-500 dark:text-ink-300/80 leading-relaxed">${p.excerpt}</p>
+    <div class="mt-5 pt-4 border-t border-ink-900/8 dark:border-white/10 flex items-center justify-between">
+      <span class="font-mono text-[10px] text-ink-500">${p.read} read</span>
+      <svg class="w-4 h-4 text-gold group-hover:translate-x-1 transition-transform" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+  `;
+  blogGrid.appendChild(card);
+});
+
+/* ============ CONTACT FORM (client-side demo) ============ */
+const form = document.getElementById('contactForm');
+const status = document.getElementById('formStatus');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  status.textContent = 'Message ready — thank you. Please confirm sending via your email client.';
+  status.className = 'text-sm text-center font-medium text-navy dark:text-gold-light';
+  status.classList.remove('hidden');
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const subject = document.getElementById('subject').value;
+  const message = document.getElementById('message').value;
+  const mailto = `mailto:contact@alaaeddine-errachid.com?subject=${encodeURIComponent(subject || 'Website inquiry')}&body=${encodeURIComponent(message + '\\n\\n— ' + name + ' (' + email + ')')}`;
+  setTimeout(() => { window.location.href = mailto; }, 900);
+});
+
+/* ============ SCROLL REVEAL ============ */
+const revealEls = document.querySelectorAll('.reveal, .stagger');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      io.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+revealEls.forEach(el => io.observe(el));
+
+/* ============ ACTIVE NAV LINK ============ */
+const sections = ['about','services','portfolio','skills','journey','insights'];
+const navLinks = document.querySelectorAll('.nav-link');
+const secIO = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(l => l.classList.remove('active'));
+      const link = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+}, { threshold: 0.4 });
+sections.forEach(id => { const el = document.getElementById(id); if (el) secIO.observe(el); });
+</script>
+</body>
+</html>
