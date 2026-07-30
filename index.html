@@ -853,7 +853,7 @@ form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const subject = document.getElementById('subject').value;
   const message = document.getElementById('message').value;
-  const mailto = `mailto:contact@alaaeddine-errachid.com?subject=${encodeURIComponent(subject || 'Demande via le site')}&body=${encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')')}`;
+  const mailto = `mailto:errachidalaaeddine@gmail.com?subject=${encodeURIComponent(subject || 'Demande via le site')}&body=${encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')')}`;
   setTimeout(() => { window.location.href = mailto; }, 900);
 });
 
